@@ -1,0 +1,9 @@
+.Mainarea {
+  padding: 16px;
+  width: 60%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background: yellow;
+  align-items: center;
+}
