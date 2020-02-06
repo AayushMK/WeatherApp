@@ -12,6 +12,7 @@ const mainarea = props => (
     <Tempandicon
       temperature={props.temperature}
       description={props.description}
+      icon={props.icon}
     />
   </div>
 );

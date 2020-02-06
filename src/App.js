@@ -2,12 +2,14 @@ import React from "react";
 import Weather from "./containers/Weather/Weather";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <Weather />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Weather />
+      </div>
+    );
+  }
 }
 
 export default App;

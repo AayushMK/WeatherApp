@@ -4,10 +4,12 @@ const tempandicon = props => (
   <div className={mystyle.Tempandicon}>
     <div className={mystyle.Tandi}>
       <div className={mystyle.Temp}>{props.temperature}&deg;C</div>
-      <div className={mystyle.Icon}>icon</div>
+      <div className={mystyle.Icon}>
+        <img src={props.icon} alt="Smiley face"></img>
+      </div>
     </div>
 
-    <div>{props.description}</div>
+    <div className={mystyle.Description}>{props.description}</div>
   </div>
 );
 
