@@ -61,6 +61,22 @@ class Weather extends Component {
         });
       });
   };
+  getlocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(this.showPosition);
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
+  };
+
+  showPosition = position => {
+    console.log(
+      "Latitude: " +
+        position.coords.latitude +
+        "<br>Longitude: " +
+        position.coords.longitude
+    );
+  };
 
   render() {
     return (
