@@ -1,0 +1,33 @@
+.marker {
+  background-image: url("skateboarding.svg");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+
+  cursor: pointer;
+}
+.map {
+  height: 50vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  position: relative;
+  left: -5px;
+  border-radius: 0 25px 25px 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #df0101;
+}
+
+.button:hover {
+  background: #be81f7;
+}

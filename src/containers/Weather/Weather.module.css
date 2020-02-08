@@ -1,8 +1,12 @@
 .Weather {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   margin: 0;
   display: flex;
   justify-content: center;
   background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+}
+.map {
+  width: 100%;
+  height: 50vh;
 }

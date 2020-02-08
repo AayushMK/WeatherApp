@@ -4,7 +4,9 @@ const placeanddate = props => (
   <div className={mystyle.PlaceandDate}>
     <form onSubmit={props.loadWeather}>
       <input type="text" placeholder="Enter city" name="city" />
-      <button type="submit">Search</button>
+      <button className={mystyle.button} type="submit">
+        Search
+      </button>
     </form>
     <div className={mystyle.location}>
       <h1>
