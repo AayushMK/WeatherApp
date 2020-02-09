@@ -1,12 +1,10 @@
 import React from "react";
 import mystyle from "./Placeanddate.module.css";
+import Autocomplete from "../Autocomplete/Autocomplete";
 const placeanddate = props => (
   <div className={mystyle.PlaceandDate}>
     <form onSubmit={props.loadWeather}>
-      <input type="text" placeholder="Enter city" name="city" />
-      <button className={mystyle.button} type="submit">
-        Search
-      </button>
+      <Autocomplete />
     </form>
     <div className={mystyle.location}>
       <h1>

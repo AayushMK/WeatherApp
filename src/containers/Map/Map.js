@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
 import mystyle from "./Map.module.css";
 
@@ -7,13 +7,22 @@ import mystyle from "./Map.module.css";
 // };
 function Map(props) {
   const [viewport, setViewport] = useState({
-    width: "100vw",
-    height: "100vh",
+    width: "100%",
+    height: "100%",
     latitude: props.lat,
     longitude: props.long,
-    zoom: 10
+    zoom: 8
   });
-  console.log("inside map" + props.long);
+  useEffect(() => {
+    setViewport({
+      width: "100%",
+      height: "100%",
+      latitude: props.lat,
+      longitude: props.long,
+      zoom: 8
+    });
+  }, [props]);
+
   let reactmapgl;
   if (props.long) {
     reactmapgl = (

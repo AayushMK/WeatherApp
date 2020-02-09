@@ -1,0 +1,19 @@
+.auto-list {
+  display: block;
+  position: absolute;
+  width: 18%;
+  max-height: 200px;
+  overflow-y: scroll;
+  z-index: 999;
+  background: #fff;
+}
+.auto-list ul {
+  list-style: none;
+}
+li {
+  cursor: pointer;
+  margin: 10px 0;
+}
+li:hover {
+  text-decoration: underline;
+}
