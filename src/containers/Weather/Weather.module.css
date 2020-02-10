@@ -18,7 +18,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  /* background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)); */
+  background: linear-gradient(rgb(154, 205, 50), rgb(48, 62, 143));
   flex-direction: column;
 }
 

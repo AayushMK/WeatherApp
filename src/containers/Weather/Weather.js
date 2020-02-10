@@ -171,8 +171,7 @@ class Weather extends Component {
         <div className={mystyle.Weather}>
           <div className={mystyle.dummy}></div>
           {mainarea}
-
-          {adv}
+          <div className={mystyle.adv}></div>
         </div>
         <div className={mystyle.map}>{map}</div>
       </div>
