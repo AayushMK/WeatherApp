@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import mystyle from "../Placeanddate/Placeanddate.module.css";
 import "./Autocomplete.css";
 
-export default class Autocomplete extends Component {
+class Autocomplete extends Component {
   constructor(props) {
     super(props);
     this.items = [
@@ -114,8 +114,10 @@ export default class Autocomplete extends Component {
     }
     return (
       <ul>
-        {suggestions.map(item => (
-          <li onClick={() => this.suggestionsSelected(item)}>{item}</li>
+        {suggestions.map((item, key) => (
+          <li key={key} onClick={() => this.suggestionsSelected(item)}>
+            {item}
+          </li>
         ))}
       </ul>
     );
@@ -142,3 +144,5 @@ export default class Autocomplete extends Component {
     );
   }
 }
+
+export default Autocomplete;

@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
 import mystyle from "./Map.module.css";
 
-// const clicked = evt => {
-//   console.log(evt.lngLat);
-// };
 function Map(props) {
   const [viewport, setViewport] = useState({
     width: "100%",
@@ -42,6 +39,6 @@ function Map(props) {
   } else {
     reactmapgl = <div>Loading maps....</div>;
   }
-  return <div className={mystyle.map}>{reactmapgl}</div>;
+  return <Fragment>{reactmapgl}</Fragment>;
 }
 export default Map;

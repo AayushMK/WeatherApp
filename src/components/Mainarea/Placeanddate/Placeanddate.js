@@ -7,9 +7,9 @@ const placeanddate = props => (
       <Autocomplete />
     </form>
     <div className={mystyle.location}>
-      <h1>
+      <h2>
         {props.city}, {props.country}
-      </h1>
+      </h2>
     </div>
   </div>
 );

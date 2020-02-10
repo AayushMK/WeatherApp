@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import axios from "axios";
 
 import mystyle from "./Weather.module.css";
@@ -146,9 +146,34 @@ class Weather extends Component {
     } else {
       map = <div>Loading...</div>;
     }
+    let adv;
+    let jac;
+    if (this.state.temp >= 10) {
+      adv = (
+        <div className={mystyle.adv}>
+          <img src={require("../../cola.gif")} alt="cocacola" />
+        </div>
+      );
+    } else {
+      adv = (
+        <div className={mystyle.adv}>
+          <img src={require("../../coca.gif")} alt="cocacola" />
+        </div>
+      );
+      jac = (
+        <div className={mystyle.jac}>
+          <img src={require("../../jac.gif")} alt="cocacola" />
+        </div>
+      );
+    }
     return (
-      <div>
-        <div className={mystyle.Weather}>{mainarea}</div>
+      <div className={mystyle.Head}>
+        <div className={mystyle.Weather}>
+          <div className={mystyle.dummy}></div>
+          {mainarea}
+
+          {adv}
+        </div>
         <div className={mystyle.map}>{map}</div>
       </div>
     );
